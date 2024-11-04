@@ -42,7 +42,14 @@ public class OrderProduct extends BaseClass {
 		driver = initializeBrowserAndOpenAppUrl(prop.getProperty("browsernm"));
 		
 	}
-	
+	/*
+	 @BeforeMethod
+	public void setup()
+	{
+		driver = initializeBrowserAndOpenAppUrl(prop.getProperty("browsernm"));
+		
+	}
+	 */
 	@AfterMethod
 	public void tearDown()
 	{
