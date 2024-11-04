@@ -1,119 +1,376 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="10" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-09T12:23:10 IST" name="Automation Suite" finished-at="2024-10-09T12:25:06 IST" duration-ms="116194">
+  <suite started-at="2024-11-03T12:32:07 IST" name="Automation Suite" finished-at="2024-11-03T12:33:34 IST" duration-ms="87327">
     <groups>
     </groups>
-    <test started-at="2024-10-09T12:23:10 IST" name="Automation Test Cases" finished-at="2024-10-09T12:25:06 IST" duration-ms="116194">
-      <class name="testcases.OrderProduct">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.OrderProduct@279fedbd]" started-at="2024-10-09T12:24:51 IST" name="setup" finished-at="2024-10-09T12:25:03 IST" duration-ms="11704" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VerifyOrderProduct()[pri:1, instance:testcases.OrderProduct@279fedbd]" started-at="2024-10-09T12:25:03 IST" name="VerifyOrderProduct" finished-at="2024-10-09T12:25:06 IST" duration-ms="3220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyOrderProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.OrderProduct@279fedbd]" started-at="2024-10-09T12:25:06 IST" name="tearDown" finished-at="2024-10-09T12:25:06 IST" duration-ms="257" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testcases.OrderProduct -->
+    <test started-at="2024-11-03T12:32:07 IST" name="Automation Test Cases" finished-at="2024-11-03T12:33:34 IST" duration-ms="87327">
       <class name="testcases.RegisterTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.RegisterTest@1573f9fc]" started-at="2024-10-09T12:23:11 IST" name="setup" finished-at="2024-10-09T12:23:31 IST" duration-ms="20864" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.RegisterTest@6150c3ec]" started-at="2024-11-03T12:32:08 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1730617328002" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyRegisterWithMandates()[pri:1, instance:testcases.RegisterTest@1573f9fc]" started-at="2024-10-09T12:23:31 IST" name="VerifyRegisterWithMandates" finished-at="2024-10-09T12:23:33 IST" duration-ms="1845" status="PASS">
+        <test-method signature="VerifyRegisterWithMandates()[pri:1, instance:testcases.RegisterTest@6150c3ec]" started-at="2024-11-03T12:32:08 IST" name="VerifyRegisterWithMandates" finished-at="2024-11-03T12:32:08 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyRegisterWithMandates -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegisterTest@1573f9fc]" started-at="2024-10-09T12:23:33 IST" name="tearDown" finished-at="2024-10-09T12:23:33 IST" duration-ms="230" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegisterTest@6150c3ec]" started-at="2024-11-03T12:32:08 IST" name="tearDown" finished-at="2024-11-03T12:32:08 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.RegisterTest@1573f9fc]" started-at="2024-10-09T12:23:33 IST" name="setup" finished-at="2024-10-09T12:23:39 IST" duration-ms="5695" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.RegisterTest@6150c3ec]" started-at="2024-11-03T12:32:08 IST" name="setup" finished-at="2024-11-03T12:32:08 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyRegisterAccountByProvidingAllFields()[pri:2, instance:testcases.RegisterTest@1573f9fc]" started-at="2024-10-09T12:23:39 IST" name="verifyRegisterAccountByProvidingAllFields" finished-at="2024-10-09T12:23:41 IST" duration-ms="1860" status="PASS">
+        <test-method signature="verifyRegisterAccountByProvidingAllFields()[pri:2, instance:testcases.RegisterTest@6150c3ec]" started-at="2024-11-03T12:32:08 IST" name="verifyRegisterAccountByProvidingAllFields" finished-at="2024-11-03T12:32:08 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegisterAccountByProvidingAllFields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegisterTest@1573f9fc]" started-at="2024-10-09T12:23:41 IST" name="tearDown" finished-at="2024-10-09T12:23:41 IST" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegisterTest@6150c3ec]" started-at="2024-11-03T12:32:08 IST" name="tearDown" finished-at="2024-11-03T12:32:08 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.RegisterTest@1573f9fc]" started-at="2024-10-09T12:23:41 IST" name="setup" finished-at="2024-10-09T12:23:44 IST" duration-ms="2851" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.RegisterTest@6150c3ec]" started-at="2024-11-03T12:32:08 IST" name="setup" finished-at="2024-11-03T12:32:08 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyRegisterwithExistingAccount()[pri:3, instance:testcases.RegisterTest@1573f9fc]" started-at="2024-10-09T12:23:44 IST" name="verifyRegisterwithExistingAccount" finished-at="2024-10-09T12:23:45 IST" duration-ms="1369" status="PASS">
+        <test-method signature="verifyRegisterwithExistingAccount()[pri:3, instance:testcases.RegisterTest@6150c3ec]" started-at="2024-11-03T12:32:08 IST" name="verifyRegisterwithExistingAccount" finished-at="2024-11-03T12:32:08 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegisterwithExistingAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegisterTest@1573f9fc]" started-at="2024-10-09T12:23:45 IST" name="tearDown" finished-at="2024-10-09T12:23:46 IST" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegisterTest@6150c3ec]" started-at="2024-11-03T12:32:08 IST" name="tearDown" finished-at="2024-11-03T12:32:08 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.RegisterTest@1573f9fc]" started-at="2024-10-09T12:23:46 IST" name="setup" finished-at="2024-10-09T12:23:50 IST" duration-ms="4683" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.RegisterTest@6150c3ec]" started-at="2024-11-03T12:32:08 IST" name="setup" finished-at="2024-11-03T12:32:08 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyRegisterwithoutEnetringDetails()[pri:4, instance:testcases.RegisterTest@1573f9fc]" started-at="2024-10-09T12:23:50 IST" name="verifyRegisterwithoutEnetringDetails" finished-at="2024-10-09T12:23:51 IST" duration-ms="522" status="PASS">
+        <test-method signature="verifyRegisterwithoutEnetringDetails()[pri:4, instance:testcases.RegisterTest@6150c3ec]" started-at="2024-11-03T12:32:08 IST" name="verifyRegisterwithoutEnetringDetails" finished-at="2024-11-03T12:32:08 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegisterwithoutEnetringDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegisterTest@1573f9fc]" started-at="2024-10-09T12:23:51 IST" name="tearDown" finished-at="2024-10-09T12:23:51 IST" duration-ms="175" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegisterTest@6150c3ec]" started-at="2024-11-03T12:32:08 IST" name="tearDown" finished-at="2024-11-03T12:32:08 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.RegisterTest -->
-      <class name="testcases.SearchTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.SearchTest@752325ad]" started-at="2024-10-09T12:24:26 IST" name="setup" finished-at="2024-10-09T12:24:32 IST" duration-ms="5333" status="PASS">
+      <class name="testcases.OrderProduct">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.OrderProduct@b3ca52e]" started-at="2024-11-03T12:33:18 IST" name="setup" finished-at="2024-11-03T12:33:23 IST" duration-ms="5592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySearchWithValidProduct()[pri:1, instance:testcases.SearchTest@752325ad]" started-at="2024-10-09T12:24:32 IST" name="verifySearchWithValidProduct" finished-at="2024-10-09T12:24:32 IST" duration-ms="527" status="PASS">
+        <test-method signature="VerifyOrderProduct(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testcases.OrderProduct@b3ca52e]" started-at="2024-11-03T12:33:23 IST" name="VerifyOrderProduct" data-provider="UserdetailsSupplier" finished-at="2024-11-03T12:33:33 IST" duration-ms="9957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prachi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ardal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vinkre@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2147483647]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[TechM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Ajara]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Ajara]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Ajara]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[417999]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyOrderProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.OrderProduct@b3ca52e]" started-at="2024-11-03T12:33:33 IST" name="tearDown" finished-at="2024-11-03T12:33:34 IST" duration-ms="1136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.OrderProduct -->
+      <class name="testcases.SearchTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.SearchTest@279fedbd]" started-at="2024-11-03T12:32:57 IST" name="setup" finished-at="2024-11-03T12:33:03 IST" duration-ms="5591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearchWithValidProduct()[pri:1, instance:testcases.SearchTest@279fedbd]" started-at="2024-11-03T12:33:03 IST" name="verifySearchWithValidProduct" finished-at="2024-11-03T12:33:03 IST" duration-ms="632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchWithValidProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@752325ad]" started-at="2024-10-09T12:24:32 IST" name="tearDown" finished-at="2024-10-09T12:24:32 IST" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@279fedbd]" started-at="2024-11-03T12:33:03 IST" name="tearDown" finished-at="2024-11-03T12:33:04 IST" duration-ms="1011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.SearchTest@752325ad]" started-at="2024-10-09T12:24:32 IST" name="setup" finished-at="2024-10-09T12:24:44 IST" duration-ms="11548" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.SearchTest@279fedbd]" started-at="2024-11-03T12:33:04 IST" name="setup" finished-at="2024-11-03T12:33:09 IST" duration-ms="5135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySearchWithInValidProduct()[pri:2, instance:testcases.SearchTest@752325ad]" started-at="2024-10-09T12:24:44 IST" name="verifySearchWithInValidProduct" finished-at="2024-10-09T12:24:44 IST" duration-ms="513" status="PASS">
+        <test-method signature="verifySearchWithInValidProduct()[pri:2, instance:testcases.SearchTest@279fedbd]" started-at="2024-11-03T12:33:09 IST" name="verifySearchWithInValidProduct" finished-at="2024-11-03T12:33:10 IST" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchWithInValidProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@752325ad]" started-at="2024-10-09T12:24:44 IST" name="tearDown" finished-at="2024-10-09T12:24:45 IST" duration-ms="228" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@279fedbd]" started-at="2024-11-03T12:33:10 IST" name="tearDown" finished-at="2024-11-03T12:33:11 IST" duration-ms="977" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.SearchTest@752325ad]" started-at="2024-10-09T12:24:45 IST" name="setup" finished-at="2024-10-09T12:24:47 IST" duration-ms="2337" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.SearchTest@279fedbd]" started-at="2024-11-03T12:33:11 IST" name="setup" finished-at="2024-11-03T12:33:16 IST" duration-ms="5585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySearchWithoutAnyProduct()[pri:3, instance:testcases.SearchTest@752325ad]" started-at="2024-10-09T12:24:47 IST" name="verifySearchWithoutAnyProduct" finished-at="2024-10-09T12:24:51 IST" duration-ms="3938" status="PASS">
+        <test-method signature="verifySearchWithoutAnyProduct()[pri:3, instance:testcases.SearchTest@279fedbd]" started-at="2024-11-03T12:33:16 IST" name="verifySearchWithoutAnyProduct" finished-at="2024-11-03T12:33:17 IST" duration-ms="310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchWithoutAnyProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@752325ad]" started-at="2024-10-09T12:24:51 IST" name="tearDown" finished-at="2024-10-09T12:24:51 IST" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SearchTest@279fedbd]" started-at="2024-11-03T12:33:17 IST" name="tearDown" finished-at="2024-11-03T12:33:18 IST" duration-ms="1062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.SearchTest -->
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:23:52 IST" name="setup" finished-at="2024-10-09T12:23:58 IST" duration-ms="6368" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:08 IST" name="setup" finished-at="2024-11-03T12:32:17 IST" duration-ms="8497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:23:58 IST" name="verifyLoginWithValidCredentials" data-provider="ValidCredentialsSupplier" finished-at="2024-10-09T12:23:59 IST" duration-ms="1042" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:17 IST" name="verifyLoginWithValidCredentials" data-provider="ValidCredentialsSupplier" finished-at="2024-11-03T12:32:18 IST" duration-ms="1386" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,15 +386,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:23:59 IST" name="tearDown" finished-at="2024-10-09T12:23:59 IST" duration-ms="236" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:18 IST" name="tearDown" finished-at="2024-11-03T12:32:20 IST" duration-ms="1239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:23:59 IST" name="setup" finished-at="2024-10-09T12:24:05 IST" duration-ms="5591" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:20 IST" name="setup" finished-at="2024-11-03T12:32:26 IST" duration-ms="6540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:05 IST" name="verifyLoginWithValidCredentials" data-provider="ValidCredentialsSupplier" finished-at="2024-10-09T12:24:06 IST" duration-ms="1065" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:26 IST" name="verifyLoginWithValidCredentials" data-provider="ValidCredentialsSupplier" finished-at="2024-11-03T12:32:27 IST" duration-ms="961" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -153,15 +410,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:06 IST" name="tearDown" finished-at="2024-10-09T12:24:06 IST" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:27 IST" name="tearDown" finished-at="2024-11-03T12:32:28 IST" duration-ms="1050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:06 IST" name="setup" finished-at="2024-10-09T12:24:10 IST" duration-ms="3770" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:28 IST" name="setup" finished-at="2024-11-03T12:32:34 IST" duration-ms="5822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:10 IST" name="verifyLoginWithValidCredentials" data-provider="ValidCredentialsSupplier" finished-at="2024-10-09T12:24:11 IST" duration-ms="1109" status="PASS">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:34 IST" name="verifyLoginWithValidCredentials" data-provider="ValidCredentialsSupplier" finished-at="2024-11-03T12:32:35 IST" duration-ms="859" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -177,43 +434,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:11 IST" name="tearDown" finished-at="2024-10-09T12:24:11 IST" duration-ms="240" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:35 IST" name="tearDown" finished-at="2024-11-03T12:32:36 IST" duration-ms="1064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:11 IST" name="setup" finished-at="2024-10-09T12:24:16 IST" duration-ms="4556" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:36 IST" name="setup" finished-at="2024-11-03T12:32:42 IST" duration-ms="6027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithInvalidCredentials()[pri:2, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:16 IST" name="verifyLoginWithInvalidCredentials" finished-at="2024-10-09T12:24:17 IST" duration-ms="1057" status="PASS">
+        <test-method signature="verifyLoginWithInvalidCredentials()[pri:2, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:42 IST" name="verifyLoginWithInvalidCredentials" finished-at="2024-11-03T12:32:42 IST" duration-ms="524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:17 IST" name="tearDown" finished-at="2024-10-09T12:24:17 IST" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:42 IST" name="tearDown" finished-at="2024-11-03T12:32:43 IST" duration-ms="863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:17 IST" name="setup" finished-at="2024-10-09T12:24:20 IST" duration-ms="2421" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:43 IST" name="setup" finished-at="2024-11-03T12:32:48 IST" duration-ms="5038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithvalidEmailAndInvalidPassword()[pri:4, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:20 IST" name="verifyLoginWithvalidEmailAndInvalidPassword" finished-at="2024-10-09T12:24:21 IST" duration-ms="921" status="PASS">
+        <test-method signature="verifyLoginWithvalidEmailAndInvalidPassword()[pri:4, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:48 IST" name="verifyLoginWithvalidEmailAndInvalidPassword" finished-at="2024-11-03T12:32:49 IST" duration-ms="493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithvalidEmailAndInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:21 IST" name="tearDown" finished-at="2024-10-09T12:24:21 IST" duration-ms="175" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:49 IST" name="tearDown" finished-at="2024-11-03T12:32:50 IST" duration-ms="906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:21 IST" name="setup" finished-at="2024-10-09T12:24:25 IST" duration-ms="4566" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:50 IST" name="setup" finished-at="2024-11-03T12:32:55 IST" duration-ms="5664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithoutCredentials()[pri:5, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:25 IST" name="verifyLoginWithoutCredentials" finished-at="2024-10-09T12:24:26 IST" duration-ms="656" status="PASS">
+        <test-method signature="verifyLoginWithoutCredentials()[pri:5, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:55 IST" name="verifyLoginWithoutCredentials" finished-at="2024-11-03T12:32:56 IST" duration-ms="543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithoutCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@2a5c8d3f]" started-at="2024-10-09T12:24:26 IST" name="tearDown" finished-at="2024-10-09T12:24:26 IST" duration-ms="259" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@752325ad]" started-at="2024-11-03T12:32:56 IST" name="tearDown" finished-at="2024-11-03T12:32:57 IST" duration-ms="1060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

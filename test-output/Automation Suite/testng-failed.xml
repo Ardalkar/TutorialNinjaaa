@@ -6,13 +6,16 @@
   </listeners>
   <test thread-count="5" name="Automation Test Cases(failed)">
     <classes>
-      <class name="testcases.Logout">
+      <class name="testcases.RegisterTest">
         <methods>
-          <include name="setup"/>
-          <include name="LogoutUser"/>
+          <include name="verifyRegisterAccountByProvidingAllFields"/>
+          <include name="verifyRegisterwithExistingAccount"/>
           <include name="tearDown"/>
+          <include name="verifyRegisterwithoutEnetringDetails"/>
+          <include name="VerifyRegisterWithMandates"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testcases.Logout -->
+      </class> <!-- testcases.RegisterTest -->
     </classes>
   </test> <!-- Automation Test Cases(failed) -->
 </suite> <!-- Failed suite [Automation Suite] -->

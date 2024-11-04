@@ -2,6 +2,8 @@ package qa.Base;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
@@ -28,6 +30,7 @@ public class BaseClass {
 	
 	public BaseClass ()
 	{
+		/*
 		prop= new Properties();
 		File propFile= new File(System.getProperty("user.dir")+"\\src\\main\\java\\qa\\config\\Config.properties");
 		
@@ -49,15 +52,36 @@ public class BaseClass {
 		{
 			e.printStackTrace();
 		}
+		*/
 		
+		prop = new Properties();
+	    TestDataprop = new Properties();
+	    
+	    // Load config properties
+	    try {
+	        File propFile = new File(System.getProperty("user.dir") + "\\src\\main\\java\\qa\\config\\Config.properties");
+	        FileInputStream fis = new FileInputStream(propFile);
+	        prop.load(fis);
+	    } catch (FileNotFoundException e) {
+	        System.err.println("Configuration file not found: " + e.getMessage());
+	    } catch (IOException e) {
+	        System.err.println("Error loading configuration properties: " + e.getMessage());
+	    }
+
+	    // Load test data properties
+	    try {
+	        File DatapropFile = new File(System.getProperty("user.dir") + "\\src\\main\\java\\qa\\Testdata\\testdata.properties");
+	        FileInputStream Datafis = new FileInputStream(DatapropFile);
+	        TestDataprop.load(Datafis);
+	    } catch (FileNotFoundException e) {
+	        System.err.println("Test data file not found: " + e.getMessage());
+	    } catch (IOException e) {
+	        System.err.println("Error loading test data properties: " + e.getMessage());
+	    }
+
 		
 	}
-	
-	
-	
-	
-	
-	
+
 	public WebDriver initializeBrowserAndOpenAppUrl(String browserName)
 	{
 

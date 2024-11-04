@@ -13,11 +13,16 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import qa.PageObject.OrderProductPage;
 public class Utilities {
 
 	public static final int IMPLICIT_WAIT_TIME=30;
 	public static final int WAIT_TIME=30;
-	
+
+	//dynamically generated data
 	public static String generateEmailTimeStamp()
 	{
 		Date date= new Date();
@@ -26,17 +31,19 @@ public class Utilities {
 		
 	}
 	
+	//	Excel file –> workbooks –> sheet –> rows --> cells	
+	
 	//get data from ExcelSheet
 	public static Object[][] GetDataFromExcel(String SheetName)
 	{ 
 		
 		//Excel File reference
-		File excelFile=new File(System.getProperty("user.dir")+"\\src\\main\\java\\qa\\Testdata\\LoginTestdata.xlsx");		
+		File excelFile=new File(System.getProperty("user.dir")+"\\src\\main\\java\\qa\\Testdata\\LoginTestdata.xlsx"); //created 'excelFile' to store path of Excel file		
 		XSSFWorkbook workbook = null;
 
 		try {
-		FileInputStream fisExcel = new FileInputStream(excelFile);
-		workbook=new XSSFWorkbook(fisExcel);
+		FileInputStream fisExcel = new FileInputStream(excelFile); //open file in reading mode
+		workbook=new XSSFWorkbook(fisExcel); //capture workbook from excel file
 		}catch(Throwable e)
 		{
 			e.printStackTrace();
@@ -44,19 +51,19 @@ public class Utilities {
 		
 		XSSFSheet sheet = workbook.getSheet(SheetName);
 		
-		//find no. of rows & cols
+		//find no. of rows & cols then we can get cells
 		int rows = sheet.getLastRowNum();
 		int cols = sheet.getRow(0).getLastCellNum();
 		
 		//two dimensional object array - when called GetDataFromExcel() then it will return 2-dimensional array
 		Object[][] data = new Object[rows][cols];
 		
-		for(int i=0;i<rows;i++)
-		{
-			XSSFRow row =sheet.getRow(i+1); //i+1 because to skip Sr. no. col from excel
-			
-			for(int j=0;j<cols;j++)
+			for(int i=0;i<rows;i++)
 			{
+				XSSFRow row =sheet.getRow(i+1); //i+1 because to skip Sr. no. col from excel
+				
+				for(int j=0;j<cols;j++)
+				{
 				XSSFCell cell = row.getCell(j);
 				//to find the type of cell -ex: Email is string type, pass could be integer type
 				CellType cellType = cell.getCellType();			
@@ -101,6 +108,7 @@ public class Utilities {
 		return destinationScreenshot;
 	}
 	
+    }
 	
 	
 	
@@ -119,6 +127,4 @@ public class Utilities {
 	
 	
 	
-	
-	
-}
+

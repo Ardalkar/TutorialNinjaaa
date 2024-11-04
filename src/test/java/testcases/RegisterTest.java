@@ -6,6 +6,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.beust.jcommander.Parameters;
+
 import qa.Base.BaseClass;
 import qa.PageObject.AccountSuccessPage;
 import qa.PageObject.HomePage;
@@ -25,9 +27,8 @@ public class RegisterTest extends BaseClass
 	public WebDriver driver; 
 	
 	@BeforeMethod 
-	public void setup() 
+	public void setup(String browserName) 
 	{
-		
 		driver = initializeBrowserAndOpenAppUrl(prop.getProperty("browsernm"));
 		HomePage homepage=new HomePage(driver);
 		homepage.ClickOnMyAccount();

@@ -2,12 +2,15 @@ package qa.PageObject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
 	WebDriver driver;
+	private Actions actions;
+
 //Objects
 	
 	@FindBy(xpath="//span[text()='My Account']")
@@ -25,6 +28,11 @@ public class HomePage {
 	@FindBy(xpath="//div[@id='search']/descendant::button")
 	private WebElement searchButton;
 	
+	@FindBy(xpath="//a[@class='dropdown-toggle'][@href='https://tutorialsninja.com/demo/index.php?route=product/category&path=20']")
+	private WebElement desktop;
+	
+	@FindBy(xpath="//a[@class='see-all'][@href='https://tutorialsninja.com/demo/index.php?route=product/category&path=20']")
+	private WebElement ShowAlldesktop;
 	
 	//constructor is created to remove locator's hardcoding from Login.java
 	//control came here after declare
@@ -33,6 +41,7 @@ public class HomePage {
 		this.driver=driver;
 		//PageFactory provides below line to overcome stale element reference exception
 		PageFactory.initElements(driver, this); //you can write this like PageFactory.initElements(driver, this);
+		actions = new Actions(driver);
 	}
 	
 	
@@ -64,6 +73,17 @@ public class HomePage {
 		searchButton.click();
 		return new SearchPage(driver);
 	}
-	
+	public void ClickOnShowAllDesktop()
+	{
+		ShowAlldesktop.click();
+	}
+    // Mouseover action on desktop element
+    public void mouseOverOnDesktop() {
+        actions.moveToElement(desktop).perform();
+    }
+    // Click action on ShowAllDesktop element
+    public void clickOnShowAllDesktop() {
+        ShowAlldesktop.click();
+    }
 	
 }

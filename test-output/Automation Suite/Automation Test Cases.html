@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Automation Test Cases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 09 12:23:10 IST 2024</td>
+<td>Started on:</td><td>Sun Nov 03 12:32:07 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>116 seconds (116194 ms)</td>
+<tr><td>Total time:</td><td>87 seconds (87327 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,101 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.RegisterTest.setup()'><b>setup</b><br>Test class: testcases.RegisterTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1616359099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1616359099'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1730617328</td>
+<td>testcases.RegisterTest@6150c3ec</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.RegisterTest.tearDown()'><b>tearDown</b><br>Test class: testcases.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.RegisterTest@6150c3ec</td></tr>
+<tr>
+<td title='testcases.RegisterTest.tearDown()'><b>tearDown</b><br>Test class: testcases.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.RegisterTest@6150c3ec</td></tr>
+<tr>
+<td title='testcases.RegisterTest.setup()'><b>setup</b><br>Test class: testcases.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.RegisterTest@6150c3ec</td></tr>
+<tr>
+<td title='testcases.RegisterTest.setup()'><b>setup</b><br>Test class: testcases.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.RegisterTest@6150c3ec</td></tr>
+<tr>
+<td title='testcases.RegisterTest.tearDown()'><b>tearDown</b><br>Test class: testcases.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.RegisterTest@6150c3ec</td></tr>
+<tr>
+<td title='testcases.RegisterTest.setup()'><b>setup</b><br>Test class: testcases.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.RegisterTest@6150c3ec</td></tr>
+<tr>
+<td title='testcases.RegisterTest.tearDown()'><b>tearDown</b><br>Test class: testcases.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.RegisterTest@6150c3ec</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,75 +171,232 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.OrderProduct.VerifyOrderProduct()'><b>VerifyOrderProduct</b><br>Test class: testcases.OrderProduct</td>
-<td></td>
-<td>3</td>
-<td>testcases.OrderProduct@279fedbd</td></tr>
-<tr>
-<td title='testcases.LoginTest.verifyLoginWithInvalidCredentials()'><b>verifyLoginWithInvalidCredentials</b><br>Test class: testcases.LoginTest</td>
-<td></td>
-<td>1</td>
-<td>testcases.LoginTest@2a5c8d3f</td></tr>
-<tr>
-<td title='testcases.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: testcases.LoginTest<br>Parameters: vinkare@gmail.com, 12345</td>
-<td></td>
-<td>1</td>
-<td>testcases.LoginTest@2a5c8d3f</td></tr>
-<tr>
-<td title='testcases.RegisterTest.verifyRegisterwithoutEnetringDetails()'><b>verifyRegisterwithoutEnetringDetails</b><br>Test class: testcases.RegisterTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.RegisterTest@1573f9fc</td></tr>
-<tr>
-<td title='testcases.RegisterTest.verifyRegisterwithExistingAccount()'><b>verifyRegisterwithExistingAccount</b><br>Test class: testcases.RegisterTest</td>
-<td></td>
-<td>1</td>
-<td>testcases.RegisterTest@1573f9fc</td></tr>
-<tr>
-<td title='testcases.LoginTest.verifyLoginWithoutCredentials()'><b>verifyLoginWithoutCredentials</b><br>Test class: testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.LoginTest@2a5c8d3f</td></tr>
-<tr>
-<td title='testcases.RegisterTest.verifyRegisterAccountByProvidingAllFields()'><b>verifyRegisterAccountByProvidingAllFields</b><br>Test class: testcases.RegisterTest</td>
-<td></td>
-<td>1</td>
-<td>testcases.RegisterTest@1573f9fc</td></tr>
-<tr>
-<td title='testcases.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: testcases.LoginTest<br>Parameters: piyagosh4561@gmail.com, 12345</td>
-<td></td>
-<td>1</td>
-<td>testcases.LoginTest@2a5c8d3f</td></tr>
-<tr>
 <td title='testcases.SearchTest.verifySearchWithoutAnyProduct()'><b>verifySearchWithoutAnyProduct</b><br>Test class: testcases.SearchTest</td>
 <td></td>
-<td>3</td>
-<td>testcases.SearchTest@752325ad</td></tr>
+<td>0</td>
+<td>testcases.SearchTest@279fedbd</td></tr>
+<tr>
+<td title='testcases.OrderProduct.VerifyOrderProduct()'><b>VerifyOrderProduct</b><br>Test class: testcases.OrderProduct<br>Parameters: prachi, ardal, vinkre@gmail.com, 2147483647, TechM, Ajara, Ajara, Ajara, 417999</td>
+<td></td>
+<td>9</td>
+<td>testcases.OrderProduct@b3ca52e</td></tr>
 <tr>
 <td title='testcases.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: testcases.LoginTest<br>Parameters: pvijayardalkar112297@gmail.com, 12345</td>
 <td></td>
 <td>1</td>
-<td>testcases.LoginTest@2a5c8d3f</td></tr>
-<tr>
-<td title='testcases.SearchTest.verifySearchWithInValidProduct()'><b>verifySearchWithInValidProduct</b><br>Test class: testcases.SearchTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.SearchTest@752325ad</td></tr>
-<tr>
-<td title='testcases.SearchTest.verifySearchWithValidProduct()'><b>verifySearchWithValidProduct</b><br>Test class: testcases.SearchTest</td>
-<td></td>
-<td>0</td>
-<td>testcases.SearchTest@752325ad</td></tr>
+<td>testcases.LoginTest@752325ad</td></tr>
 <tr>
 <td title='testcases.LoginTest.verifyLoginWithvalidEmailAndInvalidPassword()'><b>verifyLoginWithvalidEmailAndInvalidPassword</b><br>Test class: testcases.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>testcases.LoginTest@2a5c8d3f</td></tr>
+<td>testcases.LoginTest@752325ad</td></tr>
+<tr>
+<td title='testcases.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: testcases.LoginTest<br>Parameters: vinkare@gmail.com, 12345</td>
+<td></td>
+<td>0</td>
+<td>testcases.LoginTest@752325ad</td></tr>
+<tr>
+<td title='testcases.LoginTest.verifyLoginWithInvalidCredentials()'><b>verifyLoginWithInvalidCredentials</b><br>Test class: testcases.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.LoginTest@752325ad</td></tr>
+<tr>
+<td title='testcases.SearchTest.verifySearchWithValidProduct()'><b>verifySearchWithValidProduct</b><br>Test class: testcases.SearchTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.SearchTest@279fedbd</td></tr>
+<tr>
+<td title='testcases.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: testcases.LoginTest<br>Parameters: piyagosh4561@gmail.com, 12345</td>
+<td></td>
+<td>0</td>
+<td>testcases.LoginTest@752325ad</td></tr>
+<tr>
+<td title='testcases.LoginTest.verifyLoginWithoutCredentials()'><b>verifyLoginWithoutCredentials</b><br>Test class: testcases.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.LoginTest@752325ad</td></tr>
+<tr>
+<td title='testcases.SearchTest.verifySearchWithInValidProduct()'><b>verifySearchWithInValidProduct</b><br>Test class: testcases.SearchTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.SearchTest@279fedbd</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='testcases.RegisterTest.VerifyRegisterWithMandates()'><b>VerifyRegisterWithMandates</b><br>Test class: testcases.RegisterTest</td>
-<td></td>
-<td>1</td>
-<td>testcases.RegisterTest@1573f9fc</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1306246648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1306246648'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcases.RegisterTest@6150c3ec</td></tr>
+<tr>
+<td title='testcases.RegisterTest.verifyRegisterAccountByProvidingAllFields()'><b>verifyRegisterAccountByProvidingAllFields</b><br>Test class: testcases.RegisterTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1154821602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1154821602'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcases.RegisterTest@6150c3ec</td></tr>
+<tr>
+<td title='testcases.RegisterTest.verifyRegisterwithExistingAccount()'><b>verifyRegisterwithExistingAccount</b><br>Test class: testcases.RegisterTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1939022383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1939022383'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcases.RegisterTest@6150c3ec</td></tr>
+<tr>
+<td title='testcases.RegisterTest.verifyRegisterwithoutEnetringDetails()'><b>verifyRegisterwithoutEnetringDetails</b><br>Test class: testcases.RegisterTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace182670350", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace182670350'><pre>org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @BeforeMethod annotated setup.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcases.RegisterTest@6150c3ec</td></tr>
 </table><p>
 </body>
 </html>
