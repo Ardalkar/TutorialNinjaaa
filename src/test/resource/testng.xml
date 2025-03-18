@@ -7,13 +7,29 @@
 </listeners>
 
   <test name="Automation Test Cases">
- 
+      <groups>
+   		<run>
+            <include name="myGroup1" />
+            <include name="myGroup2" />
+            <exclude name="myExcludedGroup1" />
+            <exclude name="myExcludedGroup2" />
+        </run>
+   		
+       </groups>
+  
+  		<parameter name="username" value="john"/>
+        <parameter name="password" value="secret"/>
+ 	
     <classes>     
        <class name="testcases.RegisterTest"/>
        <class name="testcases.LoginTest"/>
        <class name="testcases.SearchTest"/>
 	   <class name="testcases.OrderProduct"/>
 	
+	<methods>
+		<exclude name="Your Test Method Name To Exclude"/>
+	</methods>
+    
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

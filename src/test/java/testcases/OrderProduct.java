@@ -20,6 +20,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import qa.Base.BaseClass;
@@ -42,14 +43,7 @@ public class OrderProduct extends BaseClass {
 		driver = initializeBrowserAndOpenAppUrl(prop.getProperty("browsernm"));
 		
 	}
-	/*
-	 @BeforeMethod
-	public void setup()
-	{
-/////////////////////////		driver = initializeBrowserAndOpenAppUrl(prop.getProperty("browsernm"));
-		
-	}
-	 */
+	
 	@AfterMethod
 	public void tearDown()
 	{
@@ -57,6 +51,7 @@ public class OrderProduct extends BaseClass {
 	}
 	
 	@Test(priority=1,invocationCount = 1,dataProvider="UserdetailsSupplier")
+	@Parameters({"username", "password"})
 	public void VerifyOrderProduct(String firstName, String lastName,String email, String phone, String Company,
             String address1,  String address2, String City, String postalCode ) throws Exception 
 	{
@@ -126,7 +121,7 @@ public class OrderProduct extends BaseClass {
 	@DataProvider (name="UserdetailsSupplier")
 		public Object[][] supplyUserTestData()
 		{
-			Object [][] Userdata = Utilities.GetDataFromExcel("UserDetails"); //UserDetails is name of excel(below excel)
+			Object  Userdata [][]= Utilities.GetDataFromExcel("UserDetails"); //UserDetails is name of excel(below excel)
 			return new Object[][]{Userdata[2]};
 		
 		}

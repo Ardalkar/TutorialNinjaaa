@@ -89,6 +89,10 @@ public class BaseClass {
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
 			driver=new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			//options.setHeadless(true);
+			options.addArguments("--headless");
+			driver=new ChromeDriver(options);
 			
 		}
 		else if(browserName.equalsIgnoreCase("firefox"))

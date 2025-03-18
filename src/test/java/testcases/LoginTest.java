@@ -63,7 +63,7 @@ public class LoginTest extends BaseClass{
 				return data;
 	
 	}	 		
-		@Test (priority=2)
+		@Test 
 		public void verifyLoginWithInvalidCredentials()
 		{
 			//LoginPage loginpage= new LoginPage(driver);
