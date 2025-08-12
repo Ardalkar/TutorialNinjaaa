@@ -21,7 +21,7 @@ public class SearchPage {
 		PageFactory.initElements(driver,this);
 		
 	}
-	
+	/*-------------changesss to see in github--------------*/
 	
 	public boolean displayStatusOfValidProducts()
 	{
