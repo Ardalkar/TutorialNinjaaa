@@ -12,7 +12,7 @@ import qa.PageObject.AccountPage;
 import qa.PageObject.HomePage;
 import qa.PageObject.LoginPage;
 import qa.utils.Utilities;
-
+/*---------------*/
 public class LoginTest extends BaseClass{
 	
 	LoginPage loginpage;
@@ -121,4 +121,5 @@ public class LoginTest extends BaseClass{
 		}
 		
 }
+
 
